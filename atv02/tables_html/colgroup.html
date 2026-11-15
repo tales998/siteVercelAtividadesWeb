@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup</title>
+    <style>
+         .cabecalhoum, .cabecalhoum th, .cabecalhoum td{
+             border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table class="cabecalhoum">
+        <colgroup><col span="2" style="background-color: #D6EEEE">
+     </colgroup>
+         <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>usando o colgroup consegue especificar qual coluna voce deseja fazer alguma alteração</p>
+    <p>e o col especifica o grupo</p>
+
+     <table class="cabecalhoum">
+        <colgroup><col span="2" style="background-color: #D6EEEE"> <col span="2" style="background-color:orange">
+     </colgroup>
+         <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>usando 2 col voce consegue deixa a tabela com duas cores diferentes</p>
+
+     <table class="cabecalhoum">
+        <colgroup><col span="2"> <col span="1" style="background-color:orange">
+     </colgroup>
+         <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>para pintar só o meio da tabela é só deixar o col vazio(sem cor)</p>
+    <p> <-col span = "2"-> <- col span ="1" style="background-color:orange"-> por exemplo</p>
+</body>
+</html>

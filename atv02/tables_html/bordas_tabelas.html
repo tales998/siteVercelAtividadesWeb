@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        .tabelaum, .tabelaum th, .tabelaum td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .tabeladois, .tabeladois th, .tabeladois td {
+            border: 5px solid white;
+            border-collapse: collapse;
+        }
+        .tabeladois th, .tabeladois td {
+            border-collapse: collapse;
+            background-color: #1fad8f;
+            padding: 10px;
+        }
+
+        .tabelatres, .tabelatres th, .tabelatres td {
+            border: 1px solid gray;
+            border-color: rgb(94, 68, 189);
+            border-radius: 10px;
+        }
+
+        .tabelaquatro th, .tabelaquatro td {
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+
+        .tabelacinco, .tabelacinco th, .tabelacinco td {
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .tabelacinco th, .tabelacinco td {
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tabela 1: bordas recolhidas</h3>
+    <table class="tabelaum">
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+    </table>
+    <p>com bordas recolhidas:
+        border: 1px solid black;
+        border-collapse: collapse;
+    </p>
+
+    <h3>Tabela 2: borda branca com fundo colorido</h3>
+    <table class="tabeladois">
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+    </table>
+    <p>bordas com cores(style table borders)  border: 1px solid white;
+        border-collapse: collapse; usar esses no table,th e td</p>
+    <p> e background-color: gray; usar apenas no th e td por exemplo</p>
+
+    <h3>Tabela 3: bordas arredondadas e colorida</h3>
+    <table class="tabelatres">
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+    </table>
+    <p>borda com mesa redonda :  border: 1px solid black;
+        border-radius: 10px; </p>
+
+    <h3>Tabela 4: bordas redondas só no th e td</h3>
+    <table class="tabelaquatro">
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+    </table>
+    <p>fronteiras da mesa redonda(round table borders)(coloque apenas no th e td): </p>
+    <p>  border: 1px solid black;</p>
+    <p>border-radius: 10px;</p>
+
+    <h3>Tabela 5: bordas pontilhadas</h3>
+    <table class="tabelacinco">
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+    </table>
+    <p>bordas pontilhadas:</p>
+    <p>border-color: rgb(194, 194, 20);</p>
+</body>
+</html>

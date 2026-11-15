@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #502d2d;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+header {
+  background-color:rgb(51, 51, 99);
+;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+  background-color: rgb(207, 187, 174);
+  height: auto; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;                  
+  width: 100%;                
+  background-color: rgb(51, 51, 99);
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+}
+
+/* @media é para deixar sites se adaptam automaticamente ao tamanho da tela(só o article e nav) */
+/*(max-width: 600px) é uma condição que só vai até 600px*/
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+#segundoarticle{
+background-color:beige;
+  border-radius: 40px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>onde tem esse titulo é o cabeçalho (header) </h2>
+</header>
+<main>
+<section>
+    <article id="segundoarticle">
+  <h2>nessa parte ficaria uma breve descrição do que vem abaixo(utilizei o main para mostrar que esse é o principal) e o section.</h2>
+  <h3> e o section para agrupar os conteudos</h3>
+  </article>
+  <article>
+    <h3>o article serviria para marcar um conteudo independente dentro da página</h3>
+       <pre><code>
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;h2&gt;nessa parte ficaria uma breve descrição do que vem abaixo(utilizei o main para mostrar que esse é o principal) e o section.&lt;/h2&gt;
+    &lt;h3&gt;e o section para agrupar os conteudos&lt;/h3&gt;
+    &lt;article&gt;
+      &lt;h1&gt;o article serviria para marcar um conteudo independente dentro da página&lt;/h1&gt;
+      &lt;p&gt;Standing on the River Thames, London has been a major settlement for two millennia...&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+      </code></pre>
+  </article>
+</section>
+</main>
+<footer>
+  <p>aqui seria o rodapé</p>
+</footer>
+
+</body>
+</html>
+

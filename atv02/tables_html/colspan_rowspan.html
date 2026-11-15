@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colspan e rowspan</title>
+    <style>
+        table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+        }
+    </style>
+</head>
+<body>
+     <table class="table">
+        <tr>
+            <th colspan="2">nome</th>
+            <th>cidade</th>
+          
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Maria</td>
+            <td>Itapetinga</td>
+          
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Gustavo</td>
+            <td>Itororo</td>
+       
+        </tr>
+    </table>
+    <p>para por um cabeçalho que possua mais de uma coluna é só por "colspan= quantidade" no th </p>
+
+    <table class="table">
+          <tr>
+            <th >nome</th>
+            <td>Pedro Silva</td>
+         
+        </tr>
+        <tr>
+            <th rowspan="2">cidade</th>
+            <td>Itapetinga</td>
+          
+        </tr>
+        <tr>
+            <td>salvador</td>
+        </tr>
+       
+    </table>
+</body>
+</html>

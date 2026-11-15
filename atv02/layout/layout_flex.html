@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>flex</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #502d2d;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+
+header {
+  background-color:rgb(51, 51, 99);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+main{
+    flex:1;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #aeaf61;
+  
+  padding: 20px;
+  border-radius: 50px;
+}
+footer {             
+  background-color: rgb(51, 51, 99);
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+}
+
+/* @media é para deixar sites se adaptam automaticamente ao tamanho da tela(só o article e nav) */
+/*(max-width: 600px) é uma condição que só vai até 600px*/
+@media (max-width: 600px) {
+   section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+#segundoarticle{
+background-color:beige;
+  border-radius: 40px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>onde tem esse titulo é o cabeçalho (header) </h2>
+</header>
+<main>
+<section>
+    <article id="segundoarticle">
+  <h2>o flex é usado para organizar os itens dentro de um container sem ter que usar o float left(que joga p esquerda) </h2>
+  <h3>o flex pai(container) é usado no comando display:flex assim organiza tudo que ta dentro do container de maneira automatica</h3>
+  <h4>o display ficou no body e no section</h4>
+  </article>
+  <article>
+    <h3>gap cria o espaço entre os filhos ou seja utilizei no section para ficar com espaçamento no article</h3>
+     
+  </article>
+</section>
+</main>
+<footer>
+  <p>aqui seria o rodapé</p>
+</footer>
+
+</body>
+</html>
+

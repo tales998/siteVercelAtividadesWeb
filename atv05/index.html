@@ -1,0 +1,199 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas_linguagens</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+
+    <div class="titulo">
+        <h1>Tabelas comparativas de linguagens e frameworks</h1>
+    </div>
+    <p></p>
+   <table>
+    <tr>
+        <th>tipo</th>
+        <th>nome</th>
+        <th>descrição</th>
+        <th>vantagens</th>
+        <th>desvantagens</th>
+    </tr>
+    <tr>
+        <td>Linguagem de marcação</td>
+        <td>HTML</td>
+        <td>Define a estrutura e o conteúdo das páginas.</td>
+        <td>Fácil de aprender; todos os navegadores o entendem; leve e rápido.</td>
+        <td>Sozinho não cria comportamento (estático); depende de CSS e JavaScript.</td>
+    </tr>
+    <tr>
+        <td>Linguagem de estilo</td>
+        <td>CSS</td>
+        <td>Controla cores, fontes e layout das páginas HTML.</td>
+        <td>Separa conteúdo e aparência; mesmo estilo em várias páginas; layout responsivo.</td>
+        <td>Pode ficar complexo em projetos grandes; não tem lógica de programação.</td>
+    </tr>
+    <tr>
+        <td>Linguagem de programação</td>
+        <td>JavaScript</td>
+        <td>Dá comportamento às páginas e também roda no servidor com Node.js.</td>
+        <td>Roda direto no navegador; mesma linguagem no front e no back; ecossistema enorme.</td>
+        <td>Tipagem fraca e dinâmica; erros só aparecem na execução; código no cliente fica visível.</td>
+    </tr>
+    <tr>
+        <td>Superconjunto do JavaScript</td>
+        <td>TypeScript</td>
+        <td>JavaScript com tipos estáticos, compilado para JavaScript puro.</td>
+        <td>Detecta erros antes de rodar; melhor suporte do editor; ajuda em projetos grandes.</td>
+        <td>Exige compilar para JavaScript; mais código e configuração; é preciso saber JavaScript antes.</td>
+    </tr>
+    <tr>
+        <td>Linguagem de programação</td>
+        <td>Python</td>
+        <td>Linguagem de uso geral, usada em back-end, dados, automação e IA.</td>
+        <td>Sintaxe simples e legível; ecossistema amplo; código aberto e comunidade grande.</td>
+        <td>Mais lento que linguagens compiladas; não roda no navegador; GIL limita o paralelismo.</td>
+    </tr>
+    <tr>
+        <td>Linguagem de programação</td>
+        <td>PHP</td>
+        <td>Linguagem de servidor criada para a web, base do WordPress.</td>
+        <td>Muitos profissionais e material; conecta fácil a bancos de dados; muito usada.</td>
+        <td>Popularidade em queda relativa; segurança depende de como é usado; menos versátil fora da web.</td>
+    </tr>
+</table>
+<p></p>
+<div class="titulo">
+    <h1>Frameworks</h1>
+</div>
+<p></p>
+<table>
+    <tr>
+        <th>framework</th>
+        <th>nome</th>
+        <th>descrição</th>
+        <th>vantagens</th>
+        <th>desvantagens</th>
+    </tr>
+    <tr>
+        <td>Biblioteca</td>
+        <td>React</td>
+        <td>Monta interfaces com componentes reutilizáveis (js).</td>
+        <td>Componentes reutilizáveis; DOM virtual (react otimiza o processo de atualização da interface); comunidade enorme; compatibilidade entre plataformas.</td>
+        <td>Não impõe estrutura; JSX (extensão da sintaxe para o js) exige base em JS; mudanças entre versões.</td>
+    </tr>
+    <tr>
+        <td>Framework</td>
+        <td>Angular</td>
+        <td>Framework completo do Google para aplicações grandes, em TypeScript.</td>
+        <td>Rotas, formulários e HTTP incluídos; TypeScript por padrão; apoio de longo prazo do Google.</td>
+        <td>Curva de aprendizado alta; mais código repetitivo; pacotes maiores.</td>
+    </tr>
+    <tr>
+        <td>Framework</td>
+        <td>Vue.js</td>
+        <td>Framework para interfaces, conhecido pela simplicidade.</td>
+        <td> recursos extras limitados, excesso de flexibilidade, comunidade restrita.</td>
+        <td>Adoção menor que React e Angular; menos recursos de terceiros; flexibilidade pode gerar padrões diferentes.</td>
+    </tr>
+    <tr>
+        <td>Meta-framework (React)</td>
+        <td>Next.js</td>
+        <td>Utiliza linguagem ts/js, ela possui integração robusta com a implantação na borda da rede</td>
+        <td>ecossistema vasto; excelente implementação do vercel; regeneração estática incremental (o que permite dados em tempo quase real com desempenho estático).</td>
+        <td>App Router e componentes de servidor são complexos; melhor desempenho atrelado à Vercel; atualizações frequentes (pode gerar atrito com as versões antigas).</td>
+    </tr>
+    <tr>
+        <td>Meta-framework (Vue)</td>
+        <td>Nuxt</td>
+        <td>back-end construido sobre o Vue.js, abstrai a maioria das configs no gerenciamento de dados assíncronos, middleware e roteamento.</td>
+        <td>SEO melhor para SPAs; gera sites estáticos; divisão automática de código.</td>
+        <td>Comunidade menor que a do Next.js; depuração mais difícil; SSR com muito tráfego pode pesar no servidor.</td>
+    </tr>
+    <tr>
+        <td>Ambiente de execução</td>
+        <td>Node.js</td>
+        <td>Executa JavaScript fora do navegador, no servidor.</td>
+        <td>Rápido e escalável; custo benefício; tratamentos de erros.</td>
+        <td>Programação assíncrona exige cuidado; biblioteca padrão enxuta; ruim para tarefas pesadas de CPU.</td>
+    </tr>
+    <tr>
+        <td>Framework (Python)</td>
+        <td>Django</td>
+        <td>estrutura web Python de alto nível que incentiva o desenvolvimento rápido e o design limpo e pragmático.</td>
+        <td>Muitos recursos prontos; projeto dividido em apps; cache; organização e formulários.</td>
+        <td>Pesado para projetos simples e curva de aprendizado inicial.</td>
+    </tr>
+    <tr>
+        <td>Framework (PHP)</td>
+        <td>Laravel</td>
+        <td>Framework PHP com sintaxe expressiva e muitos recursos prontos.</td>
+        <td>Sintaxe clara; autenticação, filas e migrações prontas; comunidade grande.</td>
+        <td> versões antigas difíceis de atualizar; mais lento que linguagens compiladas e suporte limitado.</td>
+    </tr>
+    <tr>
+        <td>Framework (Java)</td>
+        <td>Spring Boot</td>
+        <td>Simplifica criar aplicações Spring prontas para rodar.</td>
+        <td>Configuração automática; roda como .jar com servidor embutido; grande comunidade.</td>
+        <td>Estilo opinativo, menos controle; curva de aprendizado da autoconfiguração; pacotes grandes.</td>
+    </tr>
+    <tr>
+        <td>Framework (C#)</td>
+        <td>ASP.NET Core</td>
+        <td>Framework da Microsoft para web e APIs, multiplataforma.</td>
+        <td>Multiplataforma e código aberto; bom desempenho; modular e pronto para nuvem.</td>
+        <td>Curva de aprendizado; bibliotecas do .NET Framework antigo podem não funcionar; comunidade menor.</td>
+    </tr>
+    <tr>
+        <td>Framework (Ruby)</td>
+        <td>Ruby on Rails</td>
+        <td>Prioriza convenções e rapidez de desenvolvimento.</td>
+        <td>Produtivo para lançar projetos rápido; código legível; comunidade ativa.</td>
+        <td>Menos flexível; mais lento que outras opções; atualizar versões antigas é difícil.</td>
+    </tr>
+</table>
+    <h2>Fontes</h2>
+<ul>
+    <li>HTML (TutorialsPoint): <a href="https://www.tutorialspoint.com/article/advantages-and-disadvantages-of-html" target="_blank" rel="noopener">https://www.tutorialspoint.com/article/advantages-and-disadvantages-of-html</a></li>
+    <li>HTML (KnowledgeHut): <a href="https://knowledgehut.com/blog/web-development/advantages-and-disadvantages-of-html" target="_blank" rel="noopener">https://knowledgehut.com/blog/web-development/advantages-and-disadvantages-of-html</a></li>
+    <li>CSS (Scaler): <a href="https://www.scaler.com/topics/advantages-of-css" target="_blank" rel="noopener">https://www.scaler.com/topics/advantages-of-css</a></li>
+    <li>CSS (Quackit): <a href="https://www.quackit.com/css/tutorial/css_advantages.cfm" target="_blank" rel="noopener">https://www.quackit.com/css/tutorial/css_advantages.cfm</a></li>
+    <li>JavaScript (freeCodeCamp): <a href="https://www.freecodecamp.org/portuguese/news/vantagens-e-desvantagens-do-javascript/" target="_blank" rel="noopener">https://www.freecodecamp.org/portuguese/news/vantagens-e-desvantagens-do-javascript/</a></li>
+    <li>JavaScript (Brainhub): <a href="https://brainhub.eu/library/javascript-pros-and-cons" target="_blank" rel="noopener">https://brainhub.eu/library/javascript-pros-and-cons</a></li>
+    <li>JavaScript (Softjourn): <a href="https://softjourn.com/insights/the-advantages-and-disadvantages-of-javascript" target="_blank" rel="noopener">https://softjourn.com/insights/the-advantages-and-disadvantages-of-javascript</a></li>
+    <li>JavaScript (AWS): <a href="https://aws.amazon.com/pt/what-is/javascript/" target="_blank" rel="noopener">https://aws.amazon.com/pt/what-is/javascript/</a></li>
+    <li>TypeScript (AltexSoft): <a href="https://altexsoft.com/blog/typescript-pros-and-cons" target="_blank" rel="noopener">https://altexsoft.com/blog/typescript-pros-and-cons</a></li>
+    <li>TypeScript (HackerNoon): <a href="https://hackernoon.com/is-typescript-right-for-your-project" target="_blank" rel="noopener">https://hackernoon.com/is-typescript-right-for-your-project</a></li>
+    <li>Python (Squareboat): <a href="https://squareboat.com/blog/advantages-and-disadvantages-of-python" target="_blank" rel="noopener">https://squareboat.com/blog/advantages-and-disadvantages-of-python</a></li>
+    <li>Python (Python.org): <a href="https://www.python.org" target="_blank" rel="noopener">https://www.python.org</a></li>
+    <li>PHP (Light IT): <a href="https://light-it.net/blog/why-use-php-main-advantages-and-disadvantages/" target="_blank" rel="noopener">https://light-it.net/blog/why-use-php-main-advantages-and-disadvantages/</a></li>
+    <li>PHP (EPAM Anywhere): <a href="https://anywhere.epam.com/en/blog/pros-and-cons-of-php" target="_blank" rel="noopener">https://anywhere.epam.com/en/blog/pros-and-cons-of-php</a></li>
+    <li>PHP (PHP Talks): <a href="https://talks.php.net/show/scripting-v2/12" target="_blank" rel="noopener">https://talks.php.net/show/scripting-v2/12</a></li>
+    <li>React (Serverspace, português): <a href="https://serverspace.com.br/about/blog/visao-geral-do-framework-react-js-vantagens-desvantagens-e-cenarios-de-uso/" target="_blank" rel="noopener">https://serverspace.com.br/about/blog/visao-geral-do-framework-react-js-vantagens-desvantagens-e-cenarios-de-uso/</a></li>
+    <li>React (Serverspace, inglês): <a href="https://serverspace.io/about/blog/review-of-the-react-js-framework-advantages-disadvantages-and-use-cases/" target="_blank" rel="noopener">https://serverspace.io/about/blog/review-of-the-react-js-framework-advantages-disadvantages-and-use-cases/</a></li>
+    <li>React (The New Stack): <a href="https://thenewstack.io/the-pros-and-cons-of-using-react-today/" target="_blank" rel="noopener">https://thenewstack.io/the-pros-and-cons-of-using-react-today/</a></li>
+    <li>Angular e Next.js (ShiftAsia): <a href="https://shiftasia.com/column/top-20-web-development-frameworks/" target="_blank" rel="noopener">https://shiftasia.com/column/top-20-web-development-frameworks/</a></li>
+    <li>Vue.js (Alura): <a href="https://www.alura.com.br/artigos/vue-js" target="_blank" rel="noopener">https://www.alura.com.br/artigos/vue-js</a></li>
+    <li>Nuxt (DEV Community): <a href="https://dev.to/richkurtzman/advantages-and-disadvantages-of-nuxtjs-13ml" target="_blank" rel="noopener">https://dev.to/richkurtzman/advantages-and-disadvantages-of-nuxtjs-13ml</a></li>
+    <li>Nuxt (StaticMania): <a href="https://staticmania.com/blog/nextjs-vs-nuxtjs" target="_blank" rel="noopener">https://staticmania.com/blog/nextjs-vs-nuxtjs</a></li>
+    <li>Node.js (EPAM): <a href="https://www.epam.com/careers/blog/5-node-js-advantages-and-disadvantages-and-what-they-mean-for-your-project" target="_blank" rel="noopener">https://www.epam.com/careers/blog/5-node-js-advantages-and-disadvantages-and-what-they-mean-for-your-project</a></li>
+    <li>Django (Netguru): <a href="https://www.netguru.com/blog/django-pros-and-cons" target="_blank" rel="noopener">https://www.netguru.com/blog/django-pros-and-cons</a></li>
+    <li>Django (PLANEKS): <a href="https://www.planeks.net/django-for-backend-development-pros-cons/" target="_blank" rel="noopener">https://www.planeks.net/django-for-backend-development-pros-cons/</a></li>
+    <li>Django (DIO): <a href="https://www.dio.me/articles/quais-as-limitacoes-de-usar-o-frameworks-django-do-python" target="_blank" rel="noopener">https://www.dio.me/articles/quais-as-limitacoes-de-usar-o-frameworks-django-do-python</a></li>
+    <li>Django (Conteige): <a href="https://conteige.cloud/django-vantagens-e-desvantagens/" target="_blank" rel="noopener">https://conteige.cloud/django-vantagens-e-desvantagens/</a></li>
+    <li>Django REST Framework (TestDriven.io): <a href="https://testdriven.io/blog/drf-pros-cons/" target="_blank" rel="noopener">https://testdriven.io/blog/drf-pros-cons/</a></li>
+    <li>Laravel (Guru): <a href="https://www.guru.com/blog/the-pros-and-cons-of-laravel/" target="_blank" rel="noopener">https://www.guru.com/blog/the-pros-and-cons-of-laravel/</a></li>
+    <li>Spring Boot (Bamboo Agile): <a href="https://bambooagile.eu/insights/pros-and-cons-of-using-spring-boot" target="_blank" rel="noopener">https://bambooagile.eu/insights/pros-and-cons-of-using-spring-boot</a></li>
+    <li>Spring Boot (StackShare): <a href="https://stackshare.io/masonite/vs/spring-boot" target="_blank" rel="noopener">https://stackshare.io/masonite/vs/spring-boot</a></li>
+    <li>ASP.NET Core (Medium): <a href="https://medium.com/@darshan.unadkat/pros-and-cons-of-net-core-37ec451edd0" target="_blank" rel="noopener">https://medium.com/@darshan.unadkat/pros-and-cons-of-net-core-37ec451edd0</a></li>
+    <li>Ruby on Rails (IEEE Computer Society): <a href="https://www.computer.org/publications/tech-news/build-your-career/developers-insight-into-the-ruby-on-rails" target="_blank" rel="noopener">https://www.computer.org/publications/tech-news/build-your-career/developers-insight-into-the-ruby-on-rails</a></li>
+    <li>Popularidade (Stack Overflow Developer Survey 2026): <a href="https://survey.stackoverflow.co/2026/technology" target="_blank" rel="noopener">https://survey.stackoverflow.co/2026/technology</a></li>
+</ul>
+
+</body>
+</html>

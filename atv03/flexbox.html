@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+    <div class="containerex1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <p><strong>display</strong></p>
+    <p>Define que o container é do tipo flex. Sem isso, as outras propriedades do flexbox não funcionam.</p>
+
+    <p><strong>flex-direction</strong></p>
+    <p>Indica a direção dos itens, definindo o que chamamos de eixo principal (main-axis). Valores: row (esquerda para direita), row-reverse (inverso de row), column (cima para baixo) e column-reverse (inverso de column).</p>
+
+    <p><strong>flex-wrap</strong></p>
+    <p>Por padrão, os itens tendem a ficar todos na mesma linha, mesmo que a largura total seja maior que o espaço disponível. Valores: nowrap (itens ficam em uma única linha), wrap (itens que não cabem na linha vão para baixo) e wrap-reverse (itens que não cabem são jogados para cima).</p>
+
+    <p><strong>flex-flow</strong></p>
+    <p>É um atalho para flex-direction e flex-wrap, permitindo declarar o valor de ambos em uma única propriedade.</p>
+
+    <p><strong>justify-content</strong></p>
+    <p>Define o alinhamento dos itens ao longo do eixo principal. Valores: flex-start (itens juntos no começo da linha), flex-end (juntos no final da linha), center (no centro), space-between (distribuídos igualmente, o primeiro no começo e o último no final), space-around (distribuídos igualmente no espaço ao redor deles) e space-evenly (distribuídos igualmente no espaço disponível).</p>
+
+    <p><strong>align-items</strong></p>
+    <p>Define o alinhamento dos itens perpendicularmente ao eixo principal. Valores: stretch (estica os elementos para preencher o container), flex-start (juntos no começo do eixo), flex-end (juntos no final do eixo), center (centralizados no eixo) e baseline (alinha usando a base da linha como referência).</p>
+
+    <p><strong>align-content</strong></p>
+    <p>Alinha as linhas do container, e só funciona quando há mais de uma linha. Valores: stretch (estica as linhas para preencher o espaço restante), flex-start (linhas juntas no começo do container), flex-end (juntas no final), center (centralizadas no container), space-between (distribuídas igualmente, a primeira no começo e a última no final) e space-around

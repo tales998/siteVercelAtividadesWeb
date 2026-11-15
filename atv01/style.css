@@ -1,0 +1,41 @@
+ .fundo {
+      background-color: #f4f6f8;
+      font-family: Arial, sans-serif;
+    }
+
+    .cabecalho {
+      color: #1e293b;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* O container que deixa tudo lado a lado */
+    .container_topicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+   
+    .fundo_titulo {
+      background-color: #fefae0;
+      border: 1px solid #143d77;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+    .titulo {
+      color: #1e293b;
+      margin-top: 0;
+    }
+
+    a {
+      color: #143d77;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }

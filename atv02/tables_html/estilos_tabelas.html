@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estilos</title>
+    <style>
+          .estilosum, .estilosum th, .estilosum td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .estilosum {
+            width: 100%;
+        }
+        .estilosum th, .estilosum td {
+            text-align: left;
+            padding: 8px;
+        }
+        .estilosum tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+        .estilosdois, .estilosdois th, .estilosdois td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .estilosdois {
+            width: 100%;
+        }
+        .estilosdois th, .estilosdois td {
+            text-align: left;
+            padding: 8px;
+        }
+        .estilosdois th:nth-child(even), .estilosdois td:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+        .estilostres, .estilostres th, .estilostres td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .estilostres {
+            width: 100%;
+        }
+        .estilostres th, .estilostres td {
+            text-align: left;
+            padding: 8px;
+        }
+        .estilostres tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+        .estilostres th:nth-child(even), .estilostres td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+        .estilosquatro {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .estilosquatro th, .estilosquatro td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #DDD;
+        }
+        .estilosquatro tr:hover {
+            background-color: #D6EEEE;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table class="estilosum">
+            <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>o nome desse efeito é listras zebradas/zebra stripes</p>
+    <p>é só usar tr:nth-child(even) na sua classe e por uma cor dentro dela</p>
+    <p>tr:nth-child(even) {</p>
+    <p>background-color: #D6EEEE;}</p>    
+
+    <table class="estilosdois">
+            <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>o nome desse efeito é listras de zebra verticais</p>
+    <p>usa o mesmo efeito só que no td agora(coluna ao inves de linha)</p>
+    <table class="estilostres">
+             <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>listras de zebras verticais e horizontais</p>
+    <p>usar o nth-child(even) no th e td(coluna) e tr(linha)</p>
+
+    <table class="estilosquatro">
+             <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>utiliza o :hover no tr para destacar as linhas que o mouse passa por cima</p>
+</body>
+</html>

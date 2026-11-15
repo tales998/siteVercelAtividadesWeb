@@ -1,0 +1,44 @@
+.titulo{
+  width: 100%;
+  height: 40%;
+  background-color: rgba(134, 158, 236, 0.692);
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+body{
+  background-color: rgba(189, 154, 196, 0.7);
+}
+
+
+table{
+  width: 80%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: auto;
+
+     
+}
+
+table, th, td{
+  border: 2px solid black;
+}
+
+th{
+  background-color: rgb(196, 170, 211,0.9);
+}
+
+th,td{
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(230, 227, 227, 0.9) ;
+
+}
+
+
+td{
+  text-align: center;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas_tamanhos</title>
+    <style>
+        .tabelaum, .tabelaum th, .tabelaum td{
+            border:1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .tabeladois, .tabeladois th, .tabeladois td{
+             border:1px solid gray;
+            border-collapse: collapse;
+        }
+        .tabeladois{
+            width: 100%;
+        }
+        .tabeladois th:first-child{
+            width: 40%;
+        }
+        .tabelatres, .tabelatres th, .tabelatres td{
+            border:1px solid black;
+            border-collapse: collapse;
+
+        }
+        .tabelatres tr :first-child{
+            height: 110px;
+        }
+    </style>
+
+    
+
+</head>
+<body>
+   <table class="tabelaum">
+    <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+    </table>
+    <p>tamanho no 100%:</p>
+    <p>width: 100%;</p>
+
+    <table class="tabeladois">
+         <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+    </table> 
+    <p>tamanho das colunas é só usar first-child na th</p>
+    <p>.tabeladois, .tabeladois th, .tabeladois td{
+             border:1px solid gray;
+            border-collapse: collapse;
+        }
+        </p>
+        <p>.tabeladois{
+            width: 100%;
+        }
+        </p>
+        <p>.tabeladois th:first-child{
+            width: 30%;
+        }</p>
+
+        <table class="tabelatres">
+            <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>cidade</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>18</td>
+            <td>Itapetinga</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+            <td>Vitoria da Conquista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>40</td>
+            <td>Poções</td>
+        </tr>
+        </table>
+        <p>altura da coluna:</p>
+        <p> .tabelatres, .tabelatres th, .tabelatres td{
+            border:1px solid black;
+            border-collapse: collapse;</p>
+
+        }
+        <p></p>.tabelatres tr :first-child{
+            height: 110px;
+        }</p>
+</body>
+</html>

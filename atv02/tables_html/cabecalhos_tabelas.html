@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cabecalhos em tabelas</title>
+
+    <style>
+        .cabecalhoum, .cabecalhoum th, .cabecalhoum td{
+             border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .cabecalhodois, .cabecalhodois th,.cabecalhodois td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+         .cabecalhotres, .cabecalhotres th,.cabecalhotres td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .cabecalhotres th{
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="cabecalhoum">
+        <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>os cabeçalhos são definidos por th:</p>
+    <p> tr <-th->nome<-/th-> tr por exemplo </p>
+
+     <table class="cabecalhodois">
+        <tr>
+            <th>nome</th>
+            <td>pedro</td>
+            <td>carlos</td>
+        </tr>
+        <tr>
+            <th>cidade</th>
+            <td>Itapetinga</td>
+            <td>Itororo</td>
+        </tr>
+        <tr>
+            <th>idade</th>
+            <td>20</td>
+            <td>18</td> 
+        </tr>
+    </table>
+        <p>para por o cabeçalho na vertical, tem que pode o th na primeira celula de cada linha</p>
+
+        <table class="cabecalhotres">
+        <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+        <tr>
+            <td>Gustavo Gomes</td>
+            <td>Campina Grande</td>
+            <td>30</td>
+            <td>10/03/1996</td>
+        </tr>
+    </table>
+    <p>para alinhar a esquerda é só usar a propriedade text-align</p>
+
+    <table class="cabecalhodois">
+        <tr>
+            <th colspan="2">nome</th>
+            <th>cidade</th>
+          
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Maria</td>
+            <td>Itapetinga</td>
+          
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Gustavo</td>
+            <td>Itororo</td>
+       
+        </tr>
+    </table>
+    <p>para por um cabeçalho que possua mais de uma coluna é só por "colspan= quantidade" no th </p>
+
+    <table class="cabecalhoum">
+        <caption>Informações da pessoa</caption>
+          <tr>
+            <th>nome</th>
+            <th>cidade</th>
+            <th>idade</th>
+            <th>data de nascimento</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>Itapetinga</td>
+            <td>20</td>
+            <td>20/09/2006</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>Itororo</td>
+            <td>18</td>
+            <td>15/05/2008</td>
+        </tr>
+    </table>
+    <p>para adicionar uma legenda no cabeçalho é só usar a tag caption dentro do tr</p>
+</body>
+</html>

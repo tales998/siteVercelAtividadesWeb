@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grid</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "esquerdo content direito"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 3px;
+  background-color: rgb(63, 83, 102);
+  padding: 5px;
+}
+.container div {
+  padding: 10px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+  background-color: beige;
+}
+.container div.esquerdo {
+  grid-area: esquerdo;
+  text-align: center;
+  background-color: cadetblue;
+}
+.container div.content {
+  grid-area: content;
+  text-align: center;
+  background-color: rgb(172, 112, 228);
+}
+.container div.direito{
+    grid-area: direito;
+    text-align: center;
+    background-color: rgb(250, 150, 150);
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+  background-color: antiquewhite;
+  
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header"><h2>cabeçalho</h2></div>
+  <div class="esquerdo"><h3>lado esquerdo</h3><p> com o grid-template-areas você diz como será o layout(como se fosse um esqueleto do seu layout)</p></div>
+  <div class="content"><h3>Meio</h3><p>o grid organiza os elementos em linhas e colunas ao mesmo tempo</p></div>
+  <div class="direito"><h3>lado direito</h3><p>o grid-template-columns diz quantas colunas vai ter</p></div>
+  <div class="footer"><h4>rodape</h4></div>
+</div>
+
+</body>
+</html>
